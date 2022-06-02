@@ -1,0 +1,158 @@
+{
+    "exchanges": {
+        "bitfinex": {
+            "key": null,
+            "secret": null
+        },
+        "bitmex": {
+            "key": null,
+            "secret": null
+        },
+        "binance": {
+            "key": null,
+            "secret": null
+        },
+        "binance_futures": {
+            "key": null,
+            "secret": null
+        },
+        "binance_margin": {
+            "key": null,
+            "secret": null
+        },
+        "coinbase_pro": {
+            "key": null,
+            "secret": null,
+            "passphrase": null
+        },
+        "bybit": {
+            "key": null,
+            "secret": null
+        },
+        "ftx": {
+            "key": null,
+            "secret": null
+        }
+    },
+    "notify": {
+        "slack": {
+            "webhook": null,
+            "name": "crypto-bot",
+            "icon_emoji": ":ghost:"
+        },
+        "mail": {
+            "to": "example@example.de",
+            "username": "foo@foo.de",
+            "password": "bar",
+            "server": null,
+            "port": 465
+        },
+        "telegram" : {
+            "chat_id": null,
+            "token": null
+        }
+    },
+    "log": {
+      "telegram": {
+        "chatId": null,
+        "token": null,
+        "level": "debug"
+      }
+    },
+    "webserver": {
+        "ip": "0.0.0.0",
+        "port": 8080,
+        "username": null,
+        "password": null
+    },
+    "tick": {
+        "default": null,
+        "warmup": null,
+        "signal": null,
+        "watchdog": null,
+        "ordering": null,
+        "pair_signal_concurrency": null
+    },
+    "order": {
+        "retry": null,
+        "retry_ms": null
+    },
+    "dashboard":{
+        "periods": ["15m", "1h"]
+    },
+    "desks": [
+        {
+          "name":"Top 10",
+          "grid":4,
+          "intervals":[
+            15,
+            60,
+            1440
+          ],
+          "height":400,
+          "pairs":[
+            {
+              "symbol":"bitmex:XBTUSD"
+            },
+            {
+              "symbol":"bitmex:ETHUSD"
+            },
+            {
+              "symbol":"binance:LTCUSDT"
+            },
+            {
+              "symbol":"binance:EOSUSDT"
+            },
+            {
+              "symbol":"binance:XRPUSDT"
+            },
+            {
+              "symbol":"binance:NEOUSDT"
+            },
+            {
+              "symbol":"binance:BCHUSDT"
+            },
+            {
+              "symbol":"binance:ETCUSDT"
+            },
+            {
+              "symbol":"binance:ADAUSDT"
+            },
+            {
+              "symbol":"binance:TRXUSDT"
+            },
+            {
+              "symbol":"binance:LINKUSDT"
+            },
+            {
+              "symbol":"binance:BNBUSDT"
+            },
+            {
+              "symbol":"binance:DASHUSDT"
+            }
+          ]
+        },
+        {
+            "name":"Stock",
+            "grid":3,
+            "intervals":[
+                1440
+            ],
+            "height":400,
+            "pairs":[
+                {
+                    "symbol":"SPX500USD"
+                },
+                {
+                    "symbol":"NAS100USD"
+                },
+                {
+                    "symbol":"DJI"
+                },
+                {
+                    "symbol":"EURUSD"
+                }
+            ]
+        }
+    ]
+}
